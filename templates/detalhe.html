@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{ reserva.stand }}</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">{{ reserva.nome_empresa }}</h6>
+                  <p class="card-text">{{ reserva.categoria_empresa }}</p>
+                  <a href="#" class="card-link text-secondary">CNPJ: {{ reserva.cnpj }}</a> <br>
+                  <a href="#" class="card-link text-secondary">Quitado: {{ reserva.quitado }}</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
